@@ -1,0 +1,142 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="crystalReportEmpleadosActivos.cs" />
+    <Compile Remove="crystalReportEmpleadosInactivos.cs" />
+    <Compile Remove="FormInfEmpleadosActivos.cs" />
+    <Compile Remove="FormInfEmpleadosActivos.Designer.cs" />
+    <Compile Remove="FormInfEmpleadosInactivos.cs" />
+    <Compile Remove="FormInfEmpleadosInactivos.Designer.cs" />
+    <Compile Remove="InfEmpleadosInactivos.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="FormInfEmpleadosActivos.resx" />
+    <EmbeddedResource Remove="FormInfEmpleadosInactivos.resx" />
+    <EmbeddedResource Remove="InfEmpleadosInactivos.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="crystalReportEmpleadosActivos.rpt" />
+    <None Remove="crystalReportEmpleadosInactivos.rpt" />
+    <None Remove="InfEmpleadosInactivos.rpt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="FormCalculoNomina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormCalculoNomina.Designer.cs">
+      <DependentUpon>FormCalculoNomina.cs</DependentUpon>
+    </Compile>
+    <Compile Update="FormInfCargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormInfCargos.Designer.cs">
+      <DependentUpon>FormInfCargos.cs</DependentUpon>
+    </Compile>
+    <Compile Update="FormInfNominas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormInfNominas.Designer.cs">
+      <DependentUpon>FormInfNominas.cs</DependentUpon>
+    </Compile>
+    <Compile Update="FormLicencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormLicencias.Designer.cs">
+      <DependentUpon>FormLicencias.cs</DependentUpon>
+    </Compile>
+    <Compile Update="FormMantCargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormMantCargos.Designer.cs">
+      <DependentUpon>FormMantCargos.cs</DependentUpon>
+    </Compile>
+    <Compile Update="FormMantDepartamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormMantDepartamentos.Designer.cs">
+      <DependentUpon>FormMantDepartamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Update="FormMantEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormMantEmpleados.Designer.cs">
+      <DependentUpon>FormMantEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Update="FormPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormPermisos.Designer.cs">
+      <DependentUpon>FormPermisos.cs</DependentUpon>
+    </Compile>
+    <Compile Update="FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Update="FormSalidaEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormSalidaEmpleados.Designer.cs">
+      <DependentUpon>FormSalidaEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Update="FormVacaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormVacaciones.Designer.cs">
+      <DependentUpon>FormVacaciones.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="FormCalculoNomina.resx">
+      <DependentUpon>FormCalculoNomina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FormInfCargos.resx">
+      <DependentUpon>FormInfCargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FormInfNominas.resx">
+      <DependentUpon>FormInfNominas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FormLicencias.resx">
+      <DependentUpon>FormLicencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FormMantCargos.resx">
+      <DependentUpon>FormMantCargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FormMantDepartamentos.resx">
+      <DependentUpon>FormMantDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FormMantEmpleados.resx">
+      <DependentUpon>FormMantEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FormPermisos.resx">
+      <DependentUpon>FormPermisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FormSalidaEmpleados.resx">
+      <DependentUpon>FormSalidaEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FormVacaciones.resx">
+      <DependentUpon>FormVacaciones.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
